@@ -1,21 +1,21 @@
 import { Heading } from '@chakra-ui/react';
 
-function DevOps() {
+function Automation() {
     return (
         <>
             <section>
                 <section>
-                    <Heading as="h1" size="xl">DevOps</Heading>
+                    <Heading as="h1" size="xl">Automation</Heading>
                 </section>
                 <section>
-                    <Heading as="h1" size="xl">Traditionele werkwijze</Heading>
+                    <Heading as="h1" size="xl">Tools</Heading>
                 </section>
                 <section>
-                    <Heading as="h1" size="xl">Werkwijze binnen DevOps</Heading>
+                    <Heading as="h1" size="xl">Voorbeelden</Heading>
                 </section>
             </section>
         </>
     );
 }
 
-export default DevOps;
+export default Automation;

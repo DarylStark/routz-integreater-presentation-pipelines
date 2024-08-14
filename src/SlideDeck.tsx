@@ -6,8 +6,13 @@ import 'reveal.js/plugin/highlight/zenburn.css'
 import 'reveal.js/dist/reveal.css'
 import 'reveal.js/dist/theme/black.css'
 
+// Slides
 import TitleSlide from "./slides/title";
 import DevOps from "./slides/devops";
+import Automation from "./slides/automation";
+import IAC from "./slides/iac";
+import Cloud from "./slides/cloud";
+import Questions from "./slides/questions";
 
 function SlideDeck() {
     const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
@@ -39,7 +44,7 @@ function SlideDeck() {
                     deckRef.current = null;
                 }
             } catch (e) {
-                console.warn("Reveal.js destroy call failed.");
+                console.warn(`Reveal.js destroy call failed: ${e}`);
             }
         };
     }, []);
@@ -51,6 +56,10 @@ function SlideDeck() {
             <div className='slides'>
                 <TitleSlide />
                 <DevOps />
+                <Automation />
+                <IAC />
+                <Cloud />
+                <Questions />
             </div>
         </div>
     );
