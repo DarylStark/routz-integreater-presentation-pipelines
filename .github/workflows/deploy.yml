@@ -1,5 +1,5 @@
-name: Publish website
-run-name: Publish website
+name: Publish presentation
+run-name: Publish presentation
 on:
   push:
     branches:
@@ -10,7 +10,7 @@ permissions:
   pages: write
     
 jobs:
-  publish-docs:
+  publish-presentation:
     name: Publish docs
     runs-on: ubuntu-latest
     steps:
@@ -21,7 +21,7 @@ jobs:
           npm install
           npm run build
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
