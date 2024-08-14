@@ -1,6 +1,6 @@
 import routzBuilding from '../assets/routz-building.jpg';
 
-import { Flex, Box, Heading, useMediaQuery } from '@chakra-ui/react';
+import { Flex, Box, Heading, useMediaQuery, Text } from '@chakra-ui/react';
 
 import './title.css'
 
@@ -13,8 +13,9 @@ function TitleSlide() {
                 isLargerThan768 ? 'row' : 'column'
             } justify='stretch' wrap='nowrap' align='stretch'>
                 <Box flexGrow={1} alignContent='center' minW='50%' maxW='100%' minH='50%' maxH='100%'>
-                    <Heading size='lg' as='h2'>Pipelines</Heading>
-                    <Heading size='sm' as='h5'>Door Daryl Stark</Heading>
+                    <Heading as='h1'>Pipelines</Heading>
+                    <Heading as='h3'>Door Daryl Stark</Heading>
+                    <Text size='xs'>26 september 2024</Text>
                 </Box>
                 <Box
                     flexGrow={1}
@@ -22,6 +23,7 @@ function TitleSlide() {
                     bgImage={routzBuilding}
                     minW='50%' maxW='100%'
                     minH='50%' maxH='100%'
+                    alignContent='center'
                 />
             </Flex>
         </section >
