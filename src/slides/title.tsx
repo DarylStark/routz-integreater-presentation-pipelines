@@ -1,4 +1,5 @@
 import routzBuilding from '../assets/routz-building.jpg';
+import routzLogo from '../assets/routz-logo.png';
 
 import { Flex, Box, Heading, useMediaQuery, Text } from '@chakra-ui/react';
 
@@ -23,8 +24,11 @@ function TitleSlide() {
                     bgImage={routzBuilding}
                     minW='50%' maxW='100%'
                     minH='50%' maxH='100%'
-                    alignContent='center'
-                />
+                    alignContent='flex-end'
+                    pb='24px'
+                >
+                    <img src={routzLogo} alt='Routz' />
+                </Box>
             </Flex>
         </section >
     );
