@@ -6,7 +6,7 @@ on:
       - main
       - dev
 permissions:
-  contents: write
+  id-token: write
     
 jobs:
   publish-docs:
