@@ -7,6 +7,14 @@ function DevOps() {
             <section>
                 <section>
                     <Heading as="h1" size="xl">DevOps</Heading>
+                    <pre>
+                        <code data-trim data-noescape>
+                            stages:<br />
+                            - build<br />
+                            - test<br />
+                            - deploy<br />
+                        </code>
+                    </pre>
                 </section>
                 <section>
                     <Heading as="h1" size="xl">A way of working</Heading>
