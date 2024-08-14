@@ -14,7 +14,9 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
       - name: Build project
-        run: npm run build
+        run: |
+          npm install
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
