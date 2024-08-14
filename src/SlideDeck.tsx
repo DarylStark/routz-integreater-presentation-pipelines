@@ -4,6 +4,7 @@ import 'reveal.js/dist/reveal.css'
 import 'reveal.js/dist/theme/black.css'
 
 import TitleSlide from "./slides/title";
+import DevOps from "./slides/devops";
 
 function SlideDeck() {
     const deckDivRef = useRef<HTMLDivElement>(null); // reference to deck container div
@@ -14,9 +15,10 @@ function SlideDeck() {
         if (deckRef.current) return;
 
         deckRef.current = new Reveal(deckDivRef.current!, {
-            transition: "zoom",
+            transition: "slide",
             center: true,
             disableLayout: true,
+            slideNumber: true
         });
 
         deckRef.current.initialize().then(() => {
@@ -35,16 +37,13 @@ function SlideDeck() {
         };
     }, []);
 
+
+
     return (
         <div className='reveal' ref={deckDivRef}>
             <div className='slides'>
                 <TitleSlide />
-                <section>
-                    <h1>Slide 1</h1>
-                </section>
-                <section>
-                    <h1>Slide 2</h1>
-                </section>
+                <DevOps />
             </div>
         </div>
     );
