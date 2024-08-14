@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - dev
+permissions:
+  contents: write
     
 jobs:
   publish-docs:
