@@ -1,0 +1,25 @@
+name: Publish website
+run-name: Publish website
+on:
+  push:
+    branches:
+      - main
+    
+jobs:
+  publish-docs:
+    name: Publish docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+      - name: Build project
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
