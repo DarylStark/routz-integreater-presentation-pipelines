@@ -1,36 +1,47 @@
 import routzBuilding from '../assets/routz-building.jpg';
 import routzLogo from '../assets/routz-logo.png';
+import integreaterLogo from '../assets/integreater-logo.svg';
 
-import { Flex, Box, Heading, useMediaQuery, Text } from '@chakra-ui/react';
+import { Heading, Text, Image, Flex, Box, Center } from '@chakra-ui/react';
 
-import './title.css'
+import ReactiveSplit from '../layouts/reactive-split';
+
+function PresentationTitle() {
+    return (
+        <Box alignContent='center' h='100%'>
+            <Heading as='h1'>Pipelines</Heading>
+            <Heading as='h3'>Door Daryl Stark</Heading>
+            <Text size='xs'>26 september 2024</Text>
+        </Box>
+    );
+}
+
+function Logos() {
+    return (
+        <Box alignContent='flex-start' h='100%' pt='20px'>
+            <Image src={integreaterLogo} alt='Routz' /><br />
+            <Image src={routzLogo} alt='Routz' />
+        </Box>
+    );
+    return (
+        <Flex direction='row' justifyContent='space-around' align='start' h='100%' pt='80px' wrap='wrap'>
+            <Image src={integreaterLogo} alt='Routz' />
+            <Image src={routzLogo} alt='Routz' />
+        </Flex>
+    );
+}
 
 function TitleSlide() {
-    const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
-
     return (
-        <section style={{ 'height': '100%' }}>
-            <Flex h='100%' direction={
-                isLargerThan768 ? 'row' : 'column'
-            } justify='stretch' wrap='nowrap' align='stretch'>
-                <Box flexGrow={1} alignContent='center' minW='50%' maxW='100%' minH='50%' maxH='100%'>
-                    <Heading as='h1'>Pipelines</Heading>
-                    <Heading as='h3'>Door Daryl Stark</Heading>
-                    <Text size='xs'>26 september 2024</Text>
-                </Box>
-                <Box
-                    flexGrow={1}
-                    className='background-box'
-                    bgImage={routzBuilding}
-                    minW='50%' maxW='100%'
-                    minH='50%' maxH='100%'
-                    alignContent='flex-end'
-                    pb='24px'
-                >
-                    <img src={routzLogo} alt='Routz' />
-                </Box>
-            </Flex>
-        </section >
+        <section
+            style={{ 'height': '100%' }}
+        >
+            <ReactiveSplit
+                contentFirst={<PresentationTitle />}
+                bgImageSecond={routzBuilding}
+                contentSecond={<Logos />}
+            />
+        </section>
     );
 }
 
