@@ -27,6 +27,10 @@ function SlideDeck() {
             center: true,
             disableLayout: true,
             slideNumber: true,
+            showNotes: false,
+            hash: true,
+            controlsBackArrows: 'visible',
+            totalTime: 60 * 30,
             plugins: [
                 RevealNotes,
                 RevealHighlight
