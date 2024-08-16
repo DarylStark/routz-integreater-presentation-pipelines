@@ -8,7 +8,7 @@ function DevOps() {
         <>
             <section>
                 <section>
-                    <aside class="notes">
+                    <aside className="notes">
                         <ul>
                             <li>
                                 <b>Snellere time-to-market:</b>
