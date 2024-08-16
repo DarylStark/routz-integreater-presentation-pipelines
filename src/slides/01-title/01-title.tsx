@@ -23,12 +23,6 @@ function Logos() {
             <Image src={routzLogo} alt='Routz' />
         </Box>
     );
-    return (
-        <Flex direction='row' justifyContent='space-around' align='start' h='100%' pt='80px' wrap='wrap'>
-            <Image src={integreaterLogo} alt='Routz' />
-            <Image src={routzLogo} alt='Routz' />
-        </Flex>
-    );
 }
 
 function TitleSlide() {
