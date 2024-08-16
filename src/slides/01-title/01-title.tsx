@@ -2,7 +2,7 @@ import routzBuilding from '../../assets/routz-building.jpg';
 import routzLogo from '../../assets/routz-logo.png';
 import integreaterLogo from '../../assets/integreater-logo.svg';
 
-import { Heading, Text, Image, Flex, Box } from '@chakra-ui/react';
+import { Heading, Text, Image, Box } from '@chakra-ui/react';
 
 import ReactiveSplit from '../../layouts/reactive-split';
 
