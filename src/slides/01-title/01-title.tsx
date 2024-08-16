@@ -27,9 +27,7 @@ function Logos() {
 
 function TitleSlide() {
     return (
-        <section
-            style={{ 'height': '100%' }}
-        >
+        <section>
             <ReactiveSplit
                 contentFirst={<PresentationTitle />}
                 bgImageSecond={routzBuilding}
