@@ -30,7 +30,7 @@ function SlideDeck() {
             showNotes: false,
             hash: true,
             controlsBackArrows: 'visible',
-            totalTime: 60 * 30,
+            defaultTiming: 128,
             plugins: [
                 RevealNotes,
                 RevealHighlight
