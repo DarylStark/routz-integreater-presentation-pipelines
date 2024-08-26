@@ -1,5 +1,5 @@
-name: Publish presentation
-run-name: Publish presentation
+name: Lint and deploy
+run-name: Lint and deploy
 on:
   push:
     branches:
