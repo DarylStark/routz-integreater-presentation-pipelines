@@ -9,6 +9,11 @@ function Automation() {
             <section>
                 <section>
                     <Heading as="h1" size="xl">Automation</Heading>
+                    <ul>
+                        <li>Automatische deployment van software</li>
+                        <li>Automatische deployment van configuratie</li>
+                        <li>Programmeurs maken hun eigen implementatie</li>
+                    </ul>
                 </section>
                 <Tools />
                 <Examples />

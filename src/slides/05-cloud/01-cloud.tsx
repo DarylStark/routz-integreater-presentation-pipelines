@@ -9,6 +9,13 @@ function Cloud() {
             <section>
                 <section>
                     <Heading as="h1" size="xl">Cloud</Heading>
+                    <ul>
+                        <li>Kan gebruikt worden op twee manieren:</li>
+                        <ul>
+                            <li>Als automatiseringstool</li>
+                            <li>Als hostingplatform</li>
+                        </ul>
+                    </ul>
                 </section>
                 <CloudAsAutomation />
                 <CloudAsHosting />

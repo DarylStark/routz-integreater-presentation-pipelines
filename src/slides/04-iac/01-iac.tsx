@@ -9,6 +9,12 @@ function InfraAsCode() {
             <section>
                 <section>
                     <Heading as="h1" size="xl">Infrastructure as code</Heading>
+                    <ul>
+                        <li>Infrastructuur beschrijven als code</li>
+                        <li>Vier-ogen principe</li>
+                        <li>Automatische uitrol</li>
+                        <li>Versie geschiedenis</li>
+                    </ul>
                 </section>
                 <Tools />
                 <Examples />
