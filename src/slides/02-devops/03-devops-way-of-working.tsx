@@ -1,8 +1,10 @@
 import { Heading } from '@chakra-ui/react';
 
+import Slide from '../../slidedeck/Slide';
+
 function DevOpsWayOfWorking() {
     return (
-        <section>
+        <Slide>
             <Heading as="h1" size="xl">DevOps werkwijze</Heading>
             <ul>
                 <li>Ontwikkelaars en beheerders werken samen</li>
@@ -10,7 +12,7 @@ function DevOpsWayOfWorking() {
                 <li>Ontwikkelaars monitoren de servers</li>
                 <li>Ontwikkelaars geven feedback aan beheerders</li>
             </ul>
-        </section>
+        </Slide>
     );
 }
 

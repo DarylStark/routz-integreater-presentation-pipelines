@@ -1,13 +1,15 @@
 import { Heading } from '@chakra-ui/react';
 
+import Slide from '../../slidedeck/Slide';
+
 import CloudAsAutomation from './02-as-automation';
 import CloudAsHosting from './03-as-hosting';
 
 function Cloud() {
     return (
         <>
-            <section>
-                <section>
+            <Slide>
+                <Slide>
                     <Heading as="h1" size="xl">Cloud</Heading>
                     <ul>
                         <li>Kan gebruikt worden op twee manieren:</li>
@@ -16,10 +18,10 @@ function Cloud() {
                             <li>Als hostingplatform</li>
                         </ul>
                     </ul>
-                </section>
+                </Slide>
                 <CloudAsAutomation />
                 <CloudAsHosting />
-            </section>
+            </Slide>
         </>
     );
 }

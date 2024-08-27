@@ -1,8 +1,10 @@
 import { Heading } from '@chakra-ui/react';
 
+import Slide from '../../slidedeck/Slide';
+
 function CloudAsAutomation() {
     return (
-        <section>
+        <Slide>
             <Heading as="h1" size="xl">Cloud als automationtool</Heading>
             <ul>
                 <li>Automation tools draaien in de Cloud</li>
@@ -14,7 +16,7 @@ function CloudAsAutomation() {
                     <li>Google Cloud Build</li>
                 </ul>
             </ul>
-        </section>
+        </Slide>
     );
 }
 

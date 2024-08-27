@@ -1,15 +1,13 @@
 import { Heading } from '@chakra-ui/react';
 
+import Slide from '../../slidedeck/Slide';
+
 function Questions() {
     return (
-        <>
-            <section>
-                <section>
-                    <Heading as="h1" size="xl">Vragen</Heading>
-                    <p>Vragen?</p>
-                </section>
-            </section>
-        </>
+        <Slide>
+            <Heading as="h1" size="xl">Vragen</Heading>
+            <p>Vragen?</p>
+        </Slide>
     );
 }
 

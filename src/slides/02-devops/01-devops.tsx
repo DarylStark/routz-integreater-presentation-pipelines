@@ -3,11 +3,13 @@ import { Heading } from '@chakra-ui/react';
 import TraditionWayOfWorking from './02-traditional-way-of-working';
 import DevOpsWayOfWorking from './03-devops-way-of-working';
 
+import Slide from '../../slidedeck/Slide';
+
 function DevOps() {
     return (
         <>
-            <section>
-                <section>
+            <Slide>
+                <Slide>
                     <aside className="notes">
                         <ul>
                             <li>
@@ -48,10 +50,10 @@ function DevOps() {
                         <li>Betere samenwerking</li>
                         <li>Meer stabiliteit</li>
                     </ul>
-                </section>
+                </Slide>
                 <TraditionWayOfWorking />
                 <DevOpsWayOfWorking />
-            </section>
+            </Slide>
         </>
     );
 }

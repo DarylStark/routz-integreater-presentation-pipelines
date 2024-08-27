@@ -1,8 +1,10 @@
 import { Heading } from '@chakra-ui/react';
 
+import Slide from '../../slidedeck/Slide';
+
 function TraditionWayOfWorking() {
     return (
-        <section>
+        <Slide>
             <Heading as="h1" size="xl">Traditionele werkwijze</Heading>
             <ul>
                 <li>Ontwikkelaars en beheerders werken gescheiden</li>
@@ -11,7 +13,7 @@ function TraditionWayOfWorking() {
                 <li>Beheerders monitoren de servers</li>
                 <li>Beheerders geven feedback aan ontwikkelaars</li>
             </ul>
-        </section>
+        </Slide>
     );
 }
 

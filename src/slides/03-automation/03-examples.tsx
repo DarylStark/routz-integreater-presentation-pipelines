@@ -1,8 +1,10 @@
 import { Heading } from '@chakra-ui/react';
 
+import Slide from '../../slidedeck/Slide';
+
 function Examples() {
     return (
-        <section>
+        <Slide>
             <Heading as="h1" size="xl">Automation voorbeelden</Heading>
             <ul>
                 <li>Automatisch testen van code</li>
@@ -12,7 +14,7 @@ function Examples() {
                 <li>Automatisch configuratie plaatsen</li>
                 <li>Automatisch infrastructuur maken en opruimen</li>
             </ul>
-        </section>
+        </Slide>
     );
 }
 
