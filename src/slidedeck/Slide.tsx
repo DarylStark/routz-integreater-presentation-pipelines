@@ -3,6 +3,7 @@ import React from 'react';
 interface SlideProps {
     children: React.ReactNode
     backgroundImage? : string
+    presenterNotes?: React.ReactNode
 }
 
 function Slide(props: SlideProps) {
@@ -16,6 +17,10 @@ function Slide(props: SlideProps) {
             }
         }>
             {props.children}
+
+            {props.presenterNotes && (
+                <aside className="notes">{props.presenterNotes}</aside>
+            )}
         </section>
     );
 }
